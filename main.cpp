@@ -21,6 +21,23 @@ int main () {
              cin >> a >> b >> c;
              cout << "A média é: " << (a+b+c)/3 << endl;
              }
+
+            while (continua) {
+             cout << "Digite as 3 notas do aluno " << endl;
+             cin >> a >> b >> c;
+             cout << "A média é: " << (a+b+c)/3 << endl;
+             cout << "Digite 0 para encerrar e 1 para continuar" << endl;
+             cin >> continua;  
+            }
+
+            do {
+             cout << "Digite as 3 notas do aluno " << endl;
+             cin >> a >> b >> c;
+             cout << "A média é: " << (a+b+c)/3 << endl;
+             cout << "Digite 0 para encerrar e 1 para continuar" << endl;
+             cin >> continua;  
+            }  while (continua)
+    
     
     */
 
@@ -28,14 +45,13 @@ int main () {
 
    bool continua = true;
 
-   while (continua) {
+    do {
       cout << "Digite as 3 notas do aluno " << endl;
       cin >> a >> b >> c;
       cout << "A média é: " << (a+b+c)/3 << endl;
-
       cout << "Digite 0 para encerrar e 1 para continuar" << endl;
       cin >> continua;  
-   }
+   }  while (continua);
     
 
 
