@@ -15,20 +15,31 @@ int main () {
 
         cout - entrada
         cin - saida 
+
+            for (int i = 1; i <= 5; i++) {
+             cout << "Digite as 3 notas do aluno " << i << endl;
+             cin >> a >> b >> c;
+             cout << "A média é: " << (a+b+c)/3 << endl;
+             }
     
     */
 
    float a, b, c;
 
-    for (int i = 1; i <= 5; i++) {
+   bool continua = true;
+
+   while (continua) {
+      cout << "Digite as 3 notas do aluno " << endl;
+      cin >> a >> b >> c;
+      cout << "A média é: " << (a+b+c)/3 << endl;
+
+      cout << "Digite 0 para encerrar e 1 para continuar" << endl;
+      cin >> continua;  
+   }
+    
 
 
-    cout << "Digite as 3 notas do aluno" << endl;
-    cin >> a >> b >> c;
 
-
-
-    }
 
 
 
