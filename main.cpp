@@ -37,27 +37,42 @@ int main () {
              cout << "Digite 0 para encerrar e 1 para continuar" << endl;
              cin >> continua;  
             }  while (continua)
-    
+
+                VETOR
+            int notas[5] = {6, 8, 9, 7, 5};
+            char vogais[] = {'a', 'e', 'i', 'o', 'u'};
+            float salarios[100];
+
+            for (int i = 0; i < 5; i++)
+            {
+                cout << vogais[i] << " ";
+            }
+            
+            cout << endl;
+
+            int tamanho;
+
+            cout << "Digite quantas notas voce quer armazenar" << endl;
+            cin >> tamanho;
+
+            float notas[tamanho];
+            for (int i = 0; i < tamanho; i++) {
+                cin >> notas[i];
+            }
+
+            cout << "Voce digitou: ";
+            for (int i = 0; i < tamanho; i++) {
+                cout << notas[i] << " ";
+            }
+            
+            cout << endl;
+                
     
     */
 
    float a, b, c;
 
    bool continua = true;
-
-    do {
-      cout << "Digite as 3 notas do aluno " << endl;
-      cin >> a >> b >> c;
-      cout << "A média é: " << (a+b+c)/3 << endl;
-      cout << "Digite 0 para encerrar e 1 para continuar" << endl;
-      cin >> continua;  
-   }  while (continua);
     
-
-
-
-
-
-
     return 0;
 }
