@@ -2,6 +2,8 @@
 
 using namespace std;
 
+int soma(int a, int b);
+
 int main () {
 
     /*
@@ -13,8 +15,8 @@ int main () {
         double = real de 64bits
         char = caracter de 32bits
 
-        cout - entrada
-        cin - saida 
+        cout << entrada
+        cin >> saida 
 
             for (int i = 1; i <= 5; i++) {
              cout << "Digite as 3 notas do aluno " << i << endl;
@@ -73,6 +75,17 @@ int main () {
    float a, b, c;
 
    bool continua = true;
+
+    int x, y;
+
+    cin >> x >> y;
+
+    cout << soma(x, y) << endl;
     
     return 0;
+}  
+
+int soma(int a, int b) {
+    int x = a+b;
+    return x;
 }
